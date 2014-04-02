@@ -1,0 +1,9 @@
+{
+  "user":"yourloginmail",
+  "password":"yourpassword",
+  "course":"coursename from url (see README)",
+  "users":["anonymous"],
+  "scrapedir":"scrape",
+  "statsdir":"analysis",
+  "csvdir":"scrape/csv"
+}

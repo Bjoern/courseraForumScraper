@@ -1,0 +1,7 @@
+scrape
+*~
+*.swp
+analysis
+config.json
+.DS_Store
+

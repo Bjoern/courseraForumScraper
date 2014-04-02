@@ -1,0 +1,23 @@
+Working as of May 26 2014 - COursera might change things in the future so that it doesn't work anymore.
+
+Note that this scraper is not endorsed by Coursera, they might object to scraping. Use at your own risk, and be nice to not spoil things for others (no excessive scraping).
+
+Configuration is in config.json - copy config.json.sample to config.json and edit it.
+
+In the config, "course": should be the short course name from the URL. For example Andrew Ng's Machine Learning course at the moment has the URL https://class.coursera.org/ml-005, so the config entry should be "course":"ml-005".
+
+"users" can be a list of usernames that will get an extra column in the analysis, so you can see how many comments a specific user makes. The name has to match the full name used in the forum. By default, "anonymous" is in the list so that anonymous posts will be counted extra (of course all anonymous users are lumped together).
+
+In the scrape directory a threads.json for all threads and a posts.js and comments.js for every thread will be generated (TODO - change to posts.json and comments.json). The threads and comments are in JSON format, just like the Coursera API send them out (they don't have an official API yet, but it's what the Javascript requests from the server). 
+
+Only new threads or threads that have been updated since the last scraping should be downloaded when the scrape.js is run. The script checks "Last Updated" Threads on the forum page until it finds a thread it already knows. Then it downloads all posts and comments for the updated threads (haven't found a way to check for only posts and comments that are new in a thread). This means it will miss deletion or editing of old posts, as those will not show up in "Last Updated". That's a limitation the scraper has to live with atm.
+
+Stats will be generated as csv files in the analysis directory.
+
+The code should be compatible to phantomJS, but somehow phantomJS didn't succeed with Coursera. SlimerJS works (it's similar to PhantomJS but uses Gecko instead of Chrome).
+Install SlimerJS and NodeJS
+
+To scrape: slimerjs scrape.js
+To generate stats: 
+  node postsperday.js
+  node threadstats.js 
