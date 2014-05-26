@@ -1,4 +1,4 @@
-Working as of May 26 2014 - COursera might change things in the future so that it doesn't work anymore.
+Working as of May 26 2014 - Coursera might change things in the future so that it doesn't work anymore.
 
 Note that this scraper is not endorsed by Coursera, they might object to scraping. Use at your own risk, and be nice to not spoil things for others (no excessive scraping).
 
@@ -15,7 +15,7 @@ Only new threads or threads that have been updated since the last scraping shoul
 Stats will be generated as csv files in the analysis directory.
 
 The code should be compatible to phantomJS, but somehow phantomJS didn't succeed with Coursera. SlimerJS works (it's similar to PhantomJS but uses Gecko instead of Chrome).
-Install SlimerJS and NodeJS
+Install SlimerJS and NodeJS ( http://slimerjs.org/ and http://nodejs.org/ )
 
 To scrape: slimerjs scrape.js
 To generate stats: 
