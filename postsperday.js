@@ -1,3 +1,6 @@
+/**
+ *  Creates postsperday.csv, postsbyvotes.csv, userstats.csv, ctastats.csv
+ */
 var fs = require('fs')
 
 var dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"] 

@@ -1,3 +1,6 @@
+/**
+ *  creates threadsbycomments.csv and starters.csv
+ */
 var fs = require('fs')
 
 var dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"] 
