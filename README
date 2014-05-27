@@ -2,7 +2,7 @@ Working as of May 26 2014 - Coursera might change things in the future so that i
 
 Note that this scraper is not endorsed by Coursera, they might object to scraping. Use at your own risk, and be nice to not spoil things for others (no excessive scraping).
 
-Configuration is in config.json - copy config.json.sample to config.json and edit it.
+Configuration is in config.json - copy config.json.sample to config.json and edit it. login and password need to be from a user that is subscribed to the course. I recommend creating an extra account for the scraper, as it might be at risk of being banned.
 
 In the config, "course": should be the short course name from the URL. For example Andrew Ng's Machine Learning course at the moment has the URL https://class.coursera.org/ml-005, so the config entry should be "course":"ml-005".
 
